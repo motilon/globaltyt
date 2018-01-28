@@ -1,0 +1,7 @@
+.br-logo {
+	background-color: #fff;
+	overflow: hidden;
+}
+	.br-logo img {
+		max-height: 65px;
+	}
