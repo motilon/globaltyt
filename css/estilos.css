@@ -1,0 +1,223 @@
+html {
+  font-size: 16px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111; }
+
+a {
+  color: #AC6000; }
+  a:hover {
+    text-decoration: none;
+    color: #B27C00; }
+
+button, input {
+  outline: 0; }
+
+.gt-main {
+  background: url("../img/bg.jpg") no-repeat center top;
+  color: #AC6000;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.gt-main__encabezado {
+  background: #f0d700 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #AC6000;
+  padding: .5rem 1rem;
+  /*border-bottom: 2px solid $dark;*/ }
+  .gt-main__encabezado .gt-page-title {
+    flex: 1 1 auto;
+    text-align: center; }
+    .gt-main__encabezado .gt-page-title h3 {
+      font-weight: 700;
+      color: #AC6000;
+      margin-bottom: 0px; }
+
+.gt-main__content {
+  flex: 1 1 auto;
+  overflow: auto;
+  width: 100%;
+  padding: 16px 32px;
+  margin: 0 auto; }
+
+.paso.active {
+  animation: scale-display .3s;
+  display: block; }
+
+.paso.out {
+  animation: scale-display--reversed .3s;
+  animation-fill-mode: forwards;
+  display: none; }
+
+@keyframes scale-display {
+  0% {
+    display: none;
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    display: block; } }
+
+@keyframes scale-display--reversed {
+  0% {
+    display: block;
+    opacity: 1; }
+  100% {
+    display: none;
+    opacity: 0; } }
+
+.gt-main__footer {
+  padding: 16px 32px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.gt-controls button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 24px;
+  outline: 0;
+  background: #ddd;
+  color: #A50401;
+  transition: all .35s ease-in-out;
+  border: 0px;
+  /*border: 2px solid #38424F;*/
+  cursor: pointer; }
+  .gt-controls button:hover {
+    transform: scale(1.1); }
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 50px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+  .sidenav ul.sidenav-menu {
+    padding-left: 0px; }
+    .sidenav ul.sidenav-menu > li > a {
+      font-family: "Poppins", sans-serif;
+      font-size: .9rem;
+      color: #AC6000;
+      font-weight: 300; }
+      .sidenav ul.sidenav-menu > li > a:hover {
+        background: rgba(236, 225, 181, 0.7); }
+
+/* The navigation menu links */
+.sidenav-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border-top: 1px solid #ddd;
+  transition: 0.3s; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: all .35s ease-in-out; }
+  .sidenav .closebtn:hover {
+    transform: rotate(180deg); }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+/* */
+#gt-page-intermediacion .container {
+  max-width: 1260px; }
+
+#gt-page-intermediacion .gt-beneficios-bloque {
+  background: url("../img/engranaje.png") no-repeat center top;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  position: relative; }
+  #gt-page-intermediacion .gt-beneficios-bloque .inner {
+    width: 140px; }
+  #gt-page-intermediacion .gt-beneficios-bloque .gt-campo {
+    max-width: 150px; }
+  #gt-page-intermediacion .gt-beneficios-bloque ul {
+    margin-top: 12px; }
+    #gt-page-intermediacion .gt-beneficios-bloque ul li {
+      list-style-type: none;
+      color: #111;
+      text-align: center;
+      font-size: 0.8rem; }
+  #gt-page-intermediacion .gt-beneficios-bloque:last-child {
+    margin-right: 0px; }
+  #gt-page-intermediacion .gt-beneficios-bloque .flecha {
+    position: absolute;
+    width: 286px;
+    height: 202px;
+    top: -140px;
+    left: -180px;
+    background: url("../img/flecha.png") no-repeat top left; }
+
+.big-title {
+  font-weight: 700;
+  color: #A50401; }
+
+.flecha-bajar a {
+  display: inline-block;
+  color: #A50401;
+  font-size: 4rem;
+  animation: flecha-animada 2s ease-in-out infinite; }
+
+@keyframes flecha-animada {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
+
+.animar-boton {
+  animation: boton-animado 2s ease-in-out infinite; }
+
+@keyframes boton-animado {
+  from {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  to {
+    transform: scale(1.2); } }
+
+/*# sourceMappingURL=estilos.css.map */
