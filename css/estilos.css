@@ -220,4 +220,15 @@ button, input {
   to {
     transform: scale(1.2); } }
 
+/*************** Asesor Personalizado ******************/
+#gt-page-asesor .texto {
+  flex: 1 1 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%; }
+
+#gt-page-asesor .imagenes {
+  flex: 1 1 40%; }
+
 /*# sourceMappingURL=estilos.css.map */
