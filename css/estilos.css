@@ -230,7 +230,7 @@ button, input {
 
 #gt-page-asesor .imagenes {
   flex: 1 1 40%; }
-  @media (max-width: 768px) {
+  @media (min-width: 900px) {
     #gt-page-asesor .imagenes img {
       width: 240px; } }
 
