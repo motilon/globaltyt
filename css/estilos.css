@@ -288,12 +288,11 @@ button, input {
         font-size: 1.2rem; } }
 
 #gt-page-asesor .imagenes {
-  flex: 1 1 40%; }
-  @media (min-width: 900px) {
-    #gt-page-asesor .imagenes img {
-      width: 240px; } }
-  @media (max-width: 420px) {
+  display: none; }
+  @media (min-width: 768px) {
     #gt-page-asesor .imagenes {
-      display: none !important; } }
+      flex: 1 1 40%; }
+      #gt-page-asesor .imagenes img {
+        width: 240px; } }
 
 /*# sourceMappingURL=estilos.css.map */
