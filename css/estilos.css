@@ -31,6 +31,9 @@ button, input {
   color: #AC6000;
   padding: .5rem 1rem;
   /*border-bottom: 2px solid $dark;*/ }
+  @media (max-width: 420px) {
+    .gt-main__encabezado .gt-btn-menu span {
+      display: none; } }
   .gt-main__encabezado .gt-page-title {
     flex: 1 1 auto;
     text-align: center; }
@@ -38,6 +41,9 @@ button, input {
       font-weight: 700;
       color: #AC6000;
       margin-bottom: 0px; }
+      @media (max-width: 420px) {
+        .gt-main__encabezado .gt-page-title h3 {
+          font-size: 1.3rem; } }
 
 .gt-main__content {
   flex: 1 1 auto;
@@ -53,7 +59,7 @@ button, input {
 .paso.out {
   animation: scale-display--reversed .3s;
   animation-fill-mode: forwards;
-  display: none; }
+  display: none !important; }
 
 @keyframes scale-display {
   0% {
@@ -77,6 +83,20 @@ button, input {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .gt-main__footer .gt-next-page > a:first-child {
+    position: relative; }
+    .gt-main__footer .gt-next-page > a:first-child::before {
+      content: '|';
+      top: 0px;
+      right: -6px;
+      position: absolute;
+      width: 1px;
+      color: gray; }
+  @media (max-width: 420px) {
+    .gt-main__footer {
+      justify-content: center; }
+      .gt-main__footer .gt-next-page {
+        display: none; } }
 
 .gt-controls button {
   width: 40px;
@@ -160,9 +180,23 @@ button, input {
 #gt-page-intermediacion .container {
   max-width: 1260px; }
 
+@media (max-width: 812px) {
+  #gt-page-intermediacion .gt-beneficios {
+    flex-direction: column; }
+    #gt-page-intermediacion .gt-beneficios .flecha {
+      display: none; } }
+
+@media (max-width: 420px) {
+  #gt-page-intermediacion .gt-beneficios {
+    display: block !important;
+    overflow: auto; } }
+
 #gt-page-intermediacion .gt-beneficios-bloque {
-  background: url("../img/engranaje.png") no-repeat center top;
-  background-size: cover;
+  /*background: url("../img/engranaje.png") no-repeat center top;
+        background-size: cover;*/
+  /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  border-radius: 50%;
   width: 300px;
   height: 300px;
   display: flex;
@@ -170,10 +204,20 @@ button, input {
   align-items: center;
   margin-right: 24px;
   position: relative; }
+  @media (max-width: 420px) {
+    #gt-page-intermediacion .gt-beneficios-bloque {
+      margin-bottom: 24px; } }
+  @media (max-width: 1280px) {
+    #gt-page-intermediacion .gt-beneficios-bloque {
+      width: 220px;
+      height: 220px; } }
   #gt-page-intermediacion .gt-beneficios-bloque .inner {
-    width: 140px; }
+    width: 80%;
+    /*@media (max-width: 1280px) {  
+                width: 120px;
+            }*/ }
   #gt-page-intermediacion .gt-beneficios-bloque .gt-campo {
-    max-width: 150px; }
+    max-width: 100%; }
   #gt-page-intermediacion .gt-beneficios-bloque ul {
     margin-top: 12px; }
     #gt-page-intermediacion .gt-beneficios-bloque ul li {
@@ -181,6 +225,9 @@ button, input {
       color: #111;
       text-align: center;
       font-size: 0.8rem; }
+      @media (max-width: 1280px) {
+        #gt-page-intermediacion .gt-beneficios-bloque ul li {
+          font-size: 0.7rem; } }
   #gt-page-intermediacion .gt-beneficios-bloque:last-child {
     margin-right: 0px; }
   #gt-page-intermediacion .gt-beneficios-bloque .flecha {
@@ -190,6 +237,13 @@ button, input {
     top: -140px;
     left: -180px;
     background: url("../img/flecha.png") no-repeat top left; }
+    @media (max-width: 1280px) {
+      #gt-page-intermediacion .gt-beneficios-bloque .flecha {
+        width: 200px;
+        height: 141px;
+        background-size: cover;
+        top: -100px;
+        left: -125px; } }
 
 .big-title {
   font-weight: 700;
@@ -227,11 +281,19 @@ button, input {
   justify-content: space-between;
   flex-direction: column;
   height: 100%; }
+  @media (max-width: 420px) {
+    #gt-page-asesor .texto {
+      flex: 1 1 auto; }
+      #gt-page-asesor .texto h4 {
+        font-size: 1.2rem; } }
 
 #gt-page-asesor .imagenes {
   flex: 1 1 40%; }
   @media (min-width: 900px) {
     #gt-page-asesor .imagenes img {
       width: 240px; } }
+  @media (max-width: 420px) {
+    #gt-page-asesor .imagenes {
+      display: none !important; } }
 
 /*# sourceMappingURL=estilos.css.map */
