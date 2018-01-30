@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px; }
 
@@ -176,7 +177,14 @@ button, input {
   .sidenav a {
     font-size: 18px; } }
 
-/* */
+/*=============================================
+=            PÁGINA INTERMEDIACION            =
+=============================================*/
+#page-intermediacion .gt-main__footer .gt-next-page > a:first-child {
+  position: relative; }
+  #page-intermediacion .gt-main__footer .gt-next-page > a:first-child::before {
+    color: #fff; }
+
 #gt-page-intermediacion .container {
   max-width: 1260px; }
 
@@ -274,7 +282,9 @@ button, input {
   to {
     transform: scale(1.2); } }
 
-/*************** Asesor Personalizado ******************/
+/*=============================================
+=           ASESORIA PERSONALIZADA           =
+=============================================*/
 #gt-page-asesor .texto {
   flex: 1 1 60%;
   display: flex;
@@ -294,5 +304,22 @@ button, input {
       flex: 1 1 40%; }
       #gt-page-asesor .imagenes img {
         width: 240px; } }
+
+/*=============================================
+=           PORTAFOLIO DE SERVICIOS           =
+=============================================*/
+#gt-page-portafolio .texto {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%; }
+  @media (max-width: 420px) {
+    #gt-page-portafolio .texto {
+      flex: 1 1 auto; }
+      #gt-page-portafolio .texto h4 {
+        font-size: 1.2rem; } }
+
+.modal .item {
+  border-radius: 12px; }
 
 /*# sourceMappingURL=estilos.css.map */
