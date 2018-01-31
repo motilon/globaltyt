@@ -18,6 +18,9 @@ a {
 button, input {
   outline: 0; }
 
+label {
+  color: #111; }
+
 .gt-main {
   background: url("../img/bg.jpg") no-repeat center top;
   color: #AC6000;
