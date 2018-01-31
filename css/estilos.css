@@ -21,6 +21,12 @@ button, input {
 label {
   color: #111; }
 
+.input-amarillo {
+  background: #f0d700;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
 .gt-main {
   background: url("../img/bg.jpg") no-repeat center top;
   color: #AC6000;
@@ -327,5 +333,45 @@ label {
 
 .modal .item {
   border-radius: 12px; }
+
+/*=============================================
+=          EJERCICIO DE PROYECCION           =
+=============================================*/
+.big-valor {
+  background: #fff;
+  padding: 8px 36px;
+  font-size: 1.6rem;
+  color: #111;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid #ddd;
+  font-family: 'Roboto', sans-serif; }
+
+.gt-tabla-proyeccion .inner {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  border-right: 2px solid #ECE1B5;
+  font-family: 'Roboto',sans-serif; }
+  .gt-tabla-proyeccion .inner .descripcion {
+    padding: 24px 14px;
+    color: #111;
+    font-size: .9rem;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ECE1B5; }
+  .gt-tabla-proyeccion .inner .valor {
+    background: #f0d700;
+    color: #111;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 12px; }
+    .gt-tabla-proyeccion .inner .valor.bg-brand {
+      background: #B27C00;
+      color: #fff; }
 
 /*# sourceMappingURL=estilos.css.map */
